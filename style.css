@@ -1,3 +1,15 @@
+@keyframes oplata {
+    0%{
+        color:black;
+    }
+    50%{
+        color:gray;
+    }
+    100%{
+        color:black;
+    }
+}
+
 .top{
     text-align: center;
     padding-top: 0.5%;
@@ -8,6 +20,7 @@
     font-size:32px;
 }
 .number{
+
     font-family: "Imperial Script";
     font-size: 20px;
 }
@@ -50,4 +63,28 @@
 }
 .col-md-4{
     padding-bottom: 2%;
+}
+.col-md-4>a{
+    color:black;
+    opacity: 0.6;
+}
+.col-md-4>a:hover{
+    color:black;
+    animation: oplata;
+    animation-duration: 2.5s;
+}
+.golovna{
+    padding-top:1%;
+    padding-bottom:1%;
+    text-align: center;
+    font-family: "Inter";
+}
+.col-md-3{
+    padding-bottom: 2%;
+}
+.card-body>p{
+    text-align: center;
+}
+.card{
+    height: 100%;
 }
